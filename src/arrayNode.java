@@ -1,36 +1,45 @@
 
+/**
+ * JavaII_HW4_arrayBST
+ * arrayNode Class
+ * Class for creating an array as a node for use with binary search tree
+ * @author Reid Nolan
+ * @since 10/29/2017
+ * @version 1.0
+ * @param <T> <T></T>
+ */
 class arrayNode<T>
 {
-    public T data;
-    public arrayNode<T> left, right;
+    T element;
+    arrayNode<T> left, right;
 
     /**
-     *
-     * @param data
-     * @param l
-     * @param r
+     * sets left, right, and element to node
+     * @param element element
+     * @param l l
+     * @param r r
      */
-    public arrayNode(T data, arrayNode<T> l, arrayNode<T> r)
+    private arrayNode(T element, arrayNode<T> l, arrayNode<T> r)
     {
         left = l; right = r;
-        this.data = data;
+        this.element = element;
     }
 
     /**
-     *
-     * @param data
+     * sets left, right, and element to node
+     * @param element element
      */
-    public arrayNode(T data)
+    arrayNode(T element)
     {
-        this(data, null, null);
+        this(element, null, null);
     }
 
     /**
-     *
-     * @return
+     * overrides toString() method in java.lang.Object
+     * @return element.toString()
      */
     public String toString()
     {
-        return data.toString();
+        return element.toString();
     }
 }
