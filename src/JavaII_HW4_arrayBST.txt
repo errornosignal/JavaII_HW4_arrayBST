@@ -1,0 +1,38 @@
+Java II Fall 2017
+Homework 4
+
+A BST can be represented in different ways. Another way of representing a binary tree is to use an array.
+The items in the tree are assigned to locations in the array.
+
+Creating binary search trees using arrays is not a new idea, but the algorithm to calculate the left and
+right sub child makes array size more than number of elements (similar to an ArrayList). You an array,
+not an ArrayList for your solution.
+
+Consider the creation of this BST example (not n is the location of the parent):
+• Insert (50), since this is the first element, it is added at index [0] and becomes the root element.
+• Insert (30) which is left sub child of root and array index will be [2*n + 1] = [2 * 0 + 1] = [1]
+• Insert (60) which is right sub child of root and array index will be [2*n + 2] = [2*0 + 2] = [2]
+• Insert (15), this will be left sub child of (30) and index will be [2*n + 1] = [2*1 + 1] = [3]
+• Insert (70), this will be the right sub child of (60) and index will be [2*n + 2] = [2*2 + 2] = [6]
+
+In this case, an array of size = 7 is required for 5 elements. This will grow as we keep on including
+elements. Implement the interface we created in class for the BST. NOTE – Your contains and
+remove method should NOT rely on a linear search, but should use the structure of the BST to
+find the element quickly. This implementation will require that you manage the size of the array and
+resize as needed. The tree should be generic and allow any type that is comparable. This BST
+implementation should not be balanced.
+
+Write an application that adds 100,000 random values to the Tree and demonstrates the remove and
+contains methods.
+
+What you submit:
+You will need to include screenshots of your application running, you will need to have complete and
+appropriate Javadoc in the code. You will also need to include the running times of each of your
+methods along with the rationale / proof of how you determined the running time.
+
+You will also need to address the question of advantages and disadvantages of this representation of a
+BST.
+
+Submitting your Program:
+You will submit this assignment on blackboard. You are allowed one submission. You will need to submit
+your .java files, and your screenshots / discussion responses.
