@@ -8,7 +8,7 @@ import java.util.*;
  * @author Reid Nolan
  * @since 10/29/2017
  * @version 1.0
- * @param <T> <T></T>
+ * @param <T> T
  */
 public class BST <T extends Comparable<? super T>> implements Tree<T>
 {
@@ -56,7 +56,7 @@ public class BST <T extends Comparable<? super T>> implements Tree<T>
      * inserts a value into binary search tree
      * @param p p
      * @param toInsert toInsert
-     * @return new arrayNode<>(toInsert) / p
+     * @return new arrayNode (toInsert) / p
      */
     private arrayNode<T> insert(arrayNode<T> p, T toInsert)
     {
